@@ -9,14 +9,12 @@ public class ArraySum
 
 	int sumOfArray(Integer a[], int index)
 	{
-		int total=0;                             //set the accumulateur to 0 first to have the real sum at the end 
-		for (int index1=0;index1<=index;index1++)//the loop header that check the for the truthfulness of the expression
+		if (index<0)
 		{
-			total += a[index1];                 //each the expression is true, this statement will be executed, 
-			                                    //the second element be added to the first, the third to second ... so forth and all the elements are saved in total
+			return 0;                	                                    
 		}
-
-		return total;                           //whenever this method is called, total will be returned in the calling statement.
+		else
+		return a[index] + sumOfArray(a, --index);
 	}
 
 }
