@@ -27,62 +27,48 @@ public class CarPanel extends JComponent
              public void run()
              {
                 try
-                {
-                  
+                {                  
                    for(int i=0;i<100;i++)
-                   {
-                  
-                       direction = carQueue.deleteQueue();
-                     
-                       if(direction == 0){
-                           //up
-                           if(!(y < 0 && y >300)){
+                   {                 
+                       direction = carQueue.deleteQueue();                     
+                       if(direction == 0)
+                       {                           
+                           if(!(y < 0 && y >300))
+                           {
                                y = y + 10;
-                           }
-                      
-                         
+                           }                                               
                        }
-                       if (direction == 1){
-                           //down
-                      
-                           if(!(y > 300 && y < 0)){
+                       if (direction == 1)
+                       {                           
+                    	   if(!(y > 300 && y < 0))
+                    	   {
                                y = y - 10;
-                           }
-                      
+                           }                      
                        }
-                       if (direction == 2){
-                           //left
-                         
-                           if((x >0)){
+                       if (direction == 2)
+                       {                         
+                           if((x >0))
+                           {
                                x = x - 10;
-                           }
-                         
-                      
+                           }                                               
                        }
-                       if (direction == 3){
-                           //right
-//                           System.out.println(x);
-                           if( x <180){
+                       if (direction == 3)
+                       {                          
+                           if( x <180)
+                           {
                                x = x + 20;
-                           }
-                      
+                           }                      
                        }
                        repaint();
-                       Thread.sleep(delay*100);
-                     
-
-                     
+                       Thread.sleep(delay*100);                                          
                    }
                 }
                 catch (InterruptedException exception)
-                {
-                  
-                   carQueue.addToQueue();
-                  
+                {                  
+                   carQueue.addToQueue();                  
                 }
                 finally
-                {
-                  
+                {                  
                 }
              }
           }
@@ -95,7 +81,6 @@ public class CarPanel extends JComponent
    public void paintComponent(Graphics g)
    {
       Graphics2D g2 = (Graphics2D) g;
-
       car1.draw(g2,x,y);  
    }
 }
