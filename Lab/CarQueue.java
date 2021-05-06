@@ -7,25 +7,25 @@ import java.util.Random;
 public class CarQueue {
 
   
-   Random ran = new Random();
+   Random random = new Random();
    PriorityQueue<Integer> q = new PriorityQueue<Integer>();
    private int out;
   
    public CarQueue()
    { 
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));
-       q.add(ran.nextInt(4));             
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));
+       q.add(random.nextInt(4));             
    }
   
    public void addToQueue() 
@@ -36,13 +36,13 @@ public class CarQueue {
              {              
             	 try
                 {
-                   q.add(ran.nextInt(4));
-                   q.add(ran.nextInt(4));
-                   q.add(ran.nextInt(4));
-                   q.add(ran.nextInt(4));
-                   q.add(ran.nextInt(4));
-                   q.add(ran.nextInt(4));
-                   q.add(ran.nextInt(4));                                    
+                   q.add(random.nextInt(4));
+                   q.add(random.nextInt(4));
+                   q.add(random.nextInt(4));
+                   q.add(random.nextInt(4));
+                   q.add(random.nextInt(4));
+                   q.add(random.nextInt(4));
+                   q.add(random.nextInt(4));                                    
                 }
                 finally
                 {                  
@@ -70,20 +70,20 @@ public class CarQueue {
                 try
                 {
                    if(q.size() < 20){
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));
-                       q.add(ran.nextInt(4));                  
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));
+                       q.add(random.nextInt(4));                  
                    }                  
                    else if (!q.isEmpty()){
                    out = q.remove();
